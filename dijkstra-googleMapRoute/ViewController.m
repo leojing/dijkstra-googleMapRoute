@@ -35,7 +35,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     mScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    [mScrollView setContentSize:CGSizeMake(1227, 565)];
+    [mScrollView setContentSize:CGSizeMake(1227, 1000)];
 //    mScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"googleMap.png"]];
     [self.view addSubview:mScrollView];
     
