@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		241D32EE1AEA9180004D8E88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D32ED1AEA9180004D8E88 /* main.m */; };
+		241D32F11AEA9180004D8E88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D32F01AEA9180004D8E88 /* AppDelegate.m */; };
+		241D32F41AEA9180004D8E88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D32F31AEA9180004D8E88 /* ViewController.m */; };
+		241D32F71AEA9180004D8E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241D32F51AEA9180004D8E88 /* Main.storyboard */; };
+		241D32F91AEA9180004D8E88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241D32F81AEA9180004D8E88 /* Images.xcassets */; };
+		241D32FC1AEA9180004D8E88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241D32FA1AEA9180004D8E88 /* LaunchScreen.xib */; };
+		241D33081AEA9180004D8E88 /* dijkstra_googleMapRouteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D33071AEA9180004D8E88 /* dijkstra_googleMapRouteTests.m */; };
+		241D33231AEB3232004D8E88 /* googleMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 241D33221AEB3232004D8E88 /* googleMap.png */; };
+		241D33291AEBDEE8004D8E88 /* GeoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D33281AEBDEE8004D8E88 /* GeoView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		241D33021AEA9180004D8E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 241D32E01AEA9180004D8E88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 241D32E71AEA9180004D8E88;
+			remoteInfo = "dijkstra-googleMapRoute";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		241D32E81AEA9180004D8E88 /* dijkstra-googleMapRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dijkstra-googleMapRoute.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		241D32EC1AEA9180004D8E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		241D32ED1AEA9180004D8E88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		241D32EF1AEA9180004D8E88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		241D32F01AEA9180004D8E88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		241D32F21AEA9180004D8E88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		241D32F31AEA9180004D8E88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		241D32F61AEA9180004D8E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		241D32F81AEA9180004D8E88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		241D32FB1AEA9180004D8E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		241D33011AEA9180004D8E88 /* dijkstra-googleMapRouteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dijkstra-googleMapRouteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		241D33061AEA9180004D8E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		241D33071AEA9180004D8E88 /* dijkstra_googleMapRouteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dijkstra_googleMapRouteTests.m; sourceTree = "<group>"; };
+		241D33221AEB3232004D8E88 /* googleMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleMap.png; sourceTree = "<group>"; };
+		241D33271AEBDEE8004D8E88 /* GeoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoView.h; sourceTree = "<group>"; };
+		241D33281AEBDEE8004D8E88 /* GeoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		241D32E51AEA9180004D8E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241D32FE1AEA9180004D8E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		241D32DF1AEA9180004D8E88 = {
+			isa = PBXGroup;
+			children = (
+				241D32EA1AEA9180004D8E88 /* dijkstra-googleMapRoute */,
+				241D33041AEA9180004D8E88 /* dijkstra-googleMapRouteTests */,
+				241D32E91AEA9180004D8E88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		241D32E91AEA9180004D8E88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				241D32E81AEA9180004D8E88 /* dijkstra-googleMapRoute.app */,
+				241D33011AEA9180004D8E88 /* dijkstra-googleMapRouteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		241D32EA1AEA9180004D8E88 /* dijkstra-googleMapRoute */ = {
+			isa = PBXGroup;
+			children = (
+				241D33271AEBDEE8004D8E88 /* GeoView.h */,
+				241D33281AEBDEE8004D8E88 /* GeoView.m */,
+				241D32EF1AEA9180004D8E88 /* AppDelegate.h */,
+				241D32F01AEA9180004D8E88 /* AppDelegate.m */,
+				241D32F21AEA9180004D8E88 /* ViewController.h */,
+				241D32F31AEA9180004D8E88 /* ViewController.m */,
+				241D32F51AEA9180004D8E88 /* Main.storyboard */,
+				241D32F81AEA9180004D8E88 /* Images.xcassets */,
+				241D32FA1AEA9180004D8E88 /* LaunchScreen.xib */,
+				241D32EB1AEA9180004D8E88 /* Supporting Files */,
+			);
+			path = "dijkstra-googleMapRoute";
+			sourceTree = "<group>";
+		};
+		241D32EB1AEA9180004D8E88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				241D33211AEB3232004D8E88 /* images */,
+				241D32EC1AEA9180004D8E88 /* Info.plist */,
+				241D32ED1AEA9180004D8E88 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		241D33041AEA9180004D8E88 /* dijkstra-googleMapRouteTests */ = {
+			isa = PBXGroup;
+			children = (
+				241D33071AEA9180004D8E88 /* dijkstra_googleMapRouteTests.m */,
+				241D33051AEA9180004D8E88 /* Supporting Files */,
+			);
+			path = "dijkstra-googleMapRouteTests";
+			sourceTree = "<group>";
+		};
+		241D33051AEA9180004D8E88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				241D33061AEA9180004D8E88 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		241D33211AEB3232004D8E88 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				241D33221AEB3232004D8E88 /* googleMap.png */,
+			);
+			name = images;
+			path = Resource/images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		241D32E71AEA9180004D8E88 /* dijkstra-googleMapRoute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241D330B1AEA9180004D8E88 /* Build configuration list for PBXNativeTarget "dijkstra-googleMapRoute" */;
+			buildPhases = (
+				241D32E41AEA9180004D8E88 /* Sources */,
+				241D32E51AEA9180004D8E88 /* Frameworks */,
+				241D32E61AEA9180004D8E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dijkstra-googleMapRoute";
+			productName = "dijkstra-googleMapRoute";
+			productReference = 241D32E81AEA9180004D8E88 /* dijkstra-googleMapRoute.app */;
+			productType = "com.apple.product-type.application";
+		};
+		241D33001AEA9180004D8E88 /* dijkstra-googleMapRouteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241D330E1AEA9180004D8E88 /* Build configuration list for PBXNativeTarget "dijkstra-googleMapRouteTests" */;
+			buildPhases = (
+				241D32FD1AEA9180004D8E88 /* Sources */,
+				241D32FE1AEA9180004D8E88 /* Frameworks */,
+				241D32FF1AEA9180004D8E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				241D33031AEA9180004D8E88 /* PBXTargetDependency */,
+			);
+			name = "dijkstra-googleMapRouteTests";
+			productName = "dijkstra-googleMapRouteTests";
+			productReference = 241D33011AEA9180004D8E88 /* dijkstra-googleMapRouteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		241D32E01AEA9180004D8E88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = JINGLUO;
+				TargetAttributes = {
+					241D32E71AEA9180004D8E88 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					241D33001AEA9180004D8E88 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 241D32E71AEA9180004D8E88;
+					};
+				};
+			};
+			buildConfigurationList = 241D32E31AEA9180004D8E88 /* Build configuration list for PBXProject "dijkstra-googleMapRoute" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 241D32DF1AEA9180004D8E88;
+			productRefGroup = 241D32E91AEA9180004D8E88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				241D32E71AEA9180004D8E88 /* dijkstra-googleMapRoute */,
+				241D33001AEA9180004D8E88 /* dijkstra-googleMapRouteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		241D32E61AEA9180004D8E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241D32F71AEA9180004D8E88 /* Main.storyboard in Resources */,
+				241D32FC1AEA9180004D8E88 /* LaunchScreen.xib in Resources */,
+				241D32F91AEA9180004D8E88 /* Images.xcassets in Resources */,
+				241D33231AEB3232004D8E88 /* googleMap.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241D32FF1AEA9180004D8E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		241D32E41AEA9180004D8E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241D32F41AEA9180004D8E88 /* ViewController.m in Sources */,
+				241D32F11AEA9180004D8E88 /* AppDelegate.m in Sources */,
+				241D33291AEBDEE8004D8E88 /* GeoView.m in Sources */,
+				241D32EE1AEA9180004D8E88 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241D32FD1AEA9180004D8E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241D33081AEA9180004D8E88 /* dijkstra_googleMapRouteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		241D33031AEA9180004D8E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 241D32E71AEA9180004D8E88 /* dijkstra-googleMapRoute */;
+			targetProxy = 241D33021AEA9180004D8E88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		241D32F51AEA9180004D8E88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				241D32F61AEA9180004D8E88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		241D32FA1AEA9180004D8E88 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				241D32FB1AEA9180004D8E88 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		241D33091AEA9180004D8E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		241D330A1AEA9180004D8E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		241D330C1AEA9180004D8E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "dijkstra-googleMapRoute/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		241D330D1AEA9180004D8E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "dijkstra-googleMapRoute/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		241D330F1AEA9180004D8E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dijkstra-googleMapRouteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dijkstra-googleMapRoute.app/dijkstra-googleMapRoute";
+			};
+			name = Debug;
+		};
+		241D33101AEA9180004D8E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dijkstra-googleMapRouteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dijkstra-googleMapRoute.app/dijkstra-googleMapRoute";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		241D32E31AEA9180004D8E88 /* Build configuration list for PBXProject "dijkstra-googleMapRoute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241D33091AEA9180004D8E88 /* Debug */,
+				241D330A1AEA9180004D8E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		241D330B1AEA9180004D8E88 /* Build configuration list for PBXNativeTarget "dijkstra-googleMapRoute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241D330C1AEA9180004D8E88 /* Debug */,
+				241D330D1AEA9180004D8E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		241D330E1AEA9180004D8E88 /* Build configuration list for PBXNativeTarget "dijkstra-googleMapRouteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241D330F1AEA9180004D8E88 /* Debug */,
+				241D33101AEA9180004D8E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 241D32E01AEA9180004D8E88 /* Project object */;
+}
