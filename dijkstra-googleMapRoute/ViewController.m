@@ -218,7 +218,7 @@
     }
     
     // 进行dijkstra算法找出最短路径
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"The shortest distant from point%ld to point%ld is", stNum, edNum] message:[NSString stringWithFormat:@"%lf", [self DijkstraWithStartPoint:stNum endPoint:edNum]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"The shortest distant from point%ld to point%ld is", (long)stNum, (long)edNum] message:[NSString stringWithFormat:@"%lf", [self DijkstraWithStartPoint:stNum endPoint:edNum]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
     
     if (stNum > 7 || stNum == 5) {
